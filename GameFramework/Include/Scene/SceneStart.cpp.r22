@@ -1,0 +1,145 @@
+#include "SceneStart.h"
+#include "../Object/UIButton.h"
+#include "SceneResource.h"
+#include "Camera.h"
+#include "../GameManager.h"
+#include "SceneManager.h"
+#include "SceneMain.h"
+#include "SceneEdit.h"
+#include "../Collider/ColliderSphere.h"
+
+CSceneStart::CSceneStart()
+{
+}
+
+CSceneStart::~CSceneStart()
+{
+}
+
+bool CSceneStart::Init()
+{
+	m_pMainCamera->SetWorldSize(1280.f, 720.f);
+
+	LoadTexture();
+	LoadAnimation();
+
+	CUIButton* pStartButton = CreateObject<CUIButton>("StartButton");
+
+	pStartButton->CreateAnimation();
+
+	pStartButton->AddAnimation(BS_NORMAL, "StartButtonNormal");
+	pStartButton->AddAnimation(BS_MOUSEON, "StartButtonMouseOn");
+	pStartButton->AddAnimation(BS_CLICK, "StartButtonClick");
+
+	pStartButton->ChangeCollider(CT_SPHERE2D);
+
+	pStartButton->SetClickCallback<CSceneStart>(this, &CSceneStart::StartClick);
+
+	pStartButton->SetPos(1280.f / 2.f - 100.f, 720.f / 2.f - 200.f);
+	pStartButton->SetSize(200.f, 100.f);
+
+	SAFE_RELEASE(pStartButton);
+
+	CUIButton* pEditButton = CreateObject<CUIButton>("EditButton");
+
+	pEditButton->CreateAnimation();
+
+	pEditButton->AddAnimation(BS_NORMAL, "EditButtonNormal");
+	pEditButton->AddAnimation(BS_MOUSEON, "EditButtonMouseOn");
+	pEditButton->AddAnimation(BS_CLICK, "EditButtonClick");
+
+	pEditButton->SetClickCallback<CSceneStart>(this, &CSceneStart::Edit);
+
+	pEditButton->SetPos(1280.f / 2.f - 100.f, 720.f / 2.f - 50.f);
+	pEditButton->SetSize(200.f, 100.f);
+
+	SAFE_RELEASE(pEditButton);
+
+	CUIButton* pExitButton = CreateObject<CUIButton>("ExitButton");
+
+	pExitButton->CreateAnimation();
+
+	pExitButton->AddAnimation(BS_NORMAL, "StartButtonNormal");
+	pExitButton->AddAnimation(BS_MOUSEON, "StartButtonMouseOn");
+	pExitButton->AddAnimation(BS_CLICK, "StartButtonClick");
+
+	pExitButton->SetClickCallback<CSceneStart>(this, &CSceneStart::Exit);
+
+	pExitButton->SetPos(1280.f / 2.f - 100.f, 720.f / 2.f + 100.f);
+	pExitButton->SetSize(200.f, 100.f);
+
+	SAFE_RELEASE(pExitButton);
+
+	return true;
+}
+
+void CSceneStart::Start()
+{
+	CScene::Start();
+}
+
+void CSceneStart::LoadAnimation()
+{
+	m_pResource->CreateAnimationSequence("StartButtonNormal",
+		"StartButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("StartButtonNormal",
+		Vector2(0.f, 0.f), Vector2(200.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("StartButtonMouseOn",
+		"StartButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("StartButtonMouseOn",
+		Vector2(200.f, 0.f), Vector2(400.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("StartButtonClick",
+		"StartButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("StartButtonClick",
+		Vector2(400.f, 0.f), Vector2(600.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonNormal",
+		"EditButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("EditButtonNormal",
+		Vector2(0.f, 0.f), Vector2(200.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonMouseOn",
+		"EditButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("EditButtonMouseOn",
+		Vector2(200.f, 0.f), Vector2(400.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonClick",
+		"EditButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("EditButtonClick",
+		Vector2(400.f, 0.f), Vector2(600.f, 100.f));
+}
+
+void CSceneStart::LoadTexture()
+{
+	m_pResource->LoadTexture("StartButton", TEXT("StartButton.bmp"));
+	m_pResource->LoadTexture("EditButton", TEXT("EditButton.bmp"));
+}
+
+void CSceneStart::StartClick(float fTime)
+{
+	GET_SINGLE(CSceneManager)->CreateNextScene<CSceneMain>();
+}
+
+void CSceneStart::Exit(float fTime)
+{
+	GET_SINGLE(CGameManager)->Exit();
+}
+
+void CSceneStart::Edit(float fTime)
+{
+	GET_SINGLE(CSceneManager)->CreateNextScene<CSceneEdit>();
+}

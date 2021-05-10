@@ -1,0 +1,249 @@
+#include "SceneStart.h"
+#include "../Object/UIButton.h"
+#include "SceneResource.h"
+#include "Camera.h"
+#include "../GameManager.h"
+#include "SceneManager.h"
+#include "SceneMain.h"
+#include "SceneEdit.h"
+#include "../Collider/ColliderSphere.h"
+#include "../Object/UIImage.h"
+#include "../Object/UIPanel.h"
+
+CSceneStart::CSceneStart()
+{
+}
+
+CSceneStart::~CSceneStart()
+{
+}
+
+bool CSceneStart::Init()
+{
+	m_pMainCamera->SetWorldSize(1000.f, 1000.f);
+
+	LoadTexture();
+	LoadAnimation();
+
+	// Background
+	CUIPanel* pBackground = CreateObject<CUIPanel>("Background");
+	pBackground->SetTexture("Background");
+	pBackground->SetZOrder(0);
+	pBackground->SetPos(0.f, 0.f);
+	pBackground->SetSize(RESOLUTION);
+	SAFE_RELEASE(pBackground);
+
+	// Main Logo
+	Vector2 vLogoSize = Vector2(419.f, 147.f);
+	float fLogoSpace = 80.f;
+
+	CUIImage* pLogo = CreateObject<CUIImage>("Logo");
+	pLogo->SetZOrder(1);
+	pLogo->CreateAnimation();
+	pLogo->AddAnimation("Logo");
+	pLogo->SetPos(RESOLUTION.x / 2.f - 210.f, fLogoSpace);
+	pLogo->SetSize(vLogoSize);
+	SAFE_RELEASE(pLogo);
+
+	Vector2 vButtonSize = Vector2(262.f, 22.f);
+	float fFirst = vLogoSize.y + fLogoSpace * 2;
+	float fSpace = 2.f;
+
+	// Start Button
+	CUIButton* pStartButton = CreateObject<CUIButton>("StartButton");
+	pStartButton->SetZOrder(1);
+
+	pStartButton->CreateAnimation();
+
+	pStartButton->AddAnimation(BS_NORMAL, "StartButtonNormal");
+	pStartButton->AddAnimation(BS_MOUSEON, "StartButtonMouseOn");
+	pStartButton->AddAnimation(BS_CLICK, "StartButtonClick");
+
+	//pStartButton->ChangeCollider(CT_SPHERE2D);
+
+	pStartButton->SetClickCallback<CSceneStart>(this, &CSceneStart::StartClick);
+
+	pStartButton->SetPos(RESOLUTION.x / 2.f - vButtonSize.x / 2.f, fFirst);
+	pStartButton->SetSize(vButtonSize);
+	SAFE_RELEASE(pStartButton);
+
+	// Edit Button
+	CUIButton* pEditButton = CreateObject<CUIButton>("EditButton");
+
+	pEditButton->SetZOrder(1);
+	pEditButton->CreateAnimation();
+	pEditButton->AddAnimation(BS_NORMAL, "EditButtonNormal");
+	pEditButton->AddAnimation(BS_MOUSEON, "EditButtonMouseOn");
+	pEditButton->AddAnimation(BS_CLICK, "EditButtonClick");
+
+	pEditButton->SetClickCallback<CSceneStart>(this, &CSceneStart::Edit);
+
+	pEditButton->SetPos(RESOLUTION.x / 2.f -vButtonSize.x / 2.f, fFirst + vButtonSize.y + fSpace);
+	pEditButton->SetSize(vButtonSize);
+
+	SAFE_RELEASE(pEditButton);
+
+	// Exit Button
+	CUIButton* pExitButton = CreateObject<CUIButton>("ExitButton");
+	pExitButton->SetZOrder(1);
+
+	pExitButton->CreateAnimation();
+	pExitButton->AddAnimation(BS_NORMAL, "ExitButtonNormal");
+	pExitButton->AddAnimation(BS_MOUSEON, "ExitButtonMouseOn");
+	pExitButton->AddAnimation(BS_CLICK, "ExitButtonClick");
+
+	pExitButton->SetClickCallback<CSceneStart>(this, &CSceneStart::Exit);
+
+	pExitButton->SetPos(RESOLUTION.x / 2.f - vButtonSize.x / 2.f, fFirst + (vButtonSize.y + fSpace) * 2.f);
+	pExitButton->SetSize(vButtonSize);
+
+	SAFE_RELEASE(pExitButton);
+
+	return true;
+}
+
+void CSceneStart::Start()
+{
+	CScene::Start();
+}
+
+void CSceneStart::LoadAnimation()
+{
+	// LOGO
+	m_pResource->CreateAnimationSequence("Logo", "Logo", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	for (int i = 0; i < 3; ++i)
+	{
+		m_pResource->AddAnimationFrame("Logo",
+			Vector2(0.f, 0.f), Vector2(419.f, 147.f));
+	}
+
+	// 시작버튼
+	m_pResource->CreateAnimationSequence("StartButtonNormal", "StartButtonNormal", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("StartButtonNormal",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	m_pResource->CreateAnimationSequence("StartButtonMouseOn", "StartButtonMouseOn", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("StartButtonMouseOn",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	m_pResource->CreateAnimationSequence("StartButtonClick", "StartButtonMouseOn", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("StartButtonClick",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	// Edit 버튼
+	m_pResource->CreateAnimationSequence("EditButtonNormal", "EditButtonNormal", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("EditButtonNormal",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonMouseOn", "EditButtonMouseOn", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("EditButtonMouseOn",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonClick", "EditButtonMouseOn", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("EditButtonClick",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	// Exit 버튼
+	m_pResource->CreateAnimationSequence("ExitButtonNormal", "ExitButtonNormal", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("ExitButtonNormal",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	m_pResource->CreateAnimationSequence("ExitButtonMouseOn", "ExitButtonMouseOn", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("ExitButtonMouseOn",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	m_pResource->CreateAnimationSequence("ExitButtonClick", "ExitButtonMouseOn", AT_FRAME, AO_LOOP, APT_NORMAL, 0.5f);
+	m_pResource->AddAnimationFrame("ExitButtonClick",
+		Vector2(0.f, 0.f), Vector2(262.f, 22.f));
+
+	/*m_pResource->CreateAnimationSequence("StartButtonNormal",
+		"StartButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("StartButtonNormal",
+		Vector2(0.f, 0.f), Vector2(200.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("StartButtonMouseOn",
+		"StartButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("StartButtonMouseOn",
+		Vector2(200.f, 0.f), Vector2(400.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("StartButtonClick",
+		"StartButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("StartButtonClick",
+		Vector2(400.f, 0.f), Vector2(600.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonNormal",
+		"EditButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("EditButtonNormal",
+		Vector2(0.f, 0.f), Vector2(200.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonMouseOn",
+		"EditButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("EditButtonMouseOn",
+		Vector2(200.f, 0.f), Vector2(400.f, 100.f));
+
+	m_pResource->CreateAnimationSequence("EditButtonClick",
+		"EditButton", AT_ATLAS, AO_LOOP, APT_NORMAL,
+		0.5f);
+
+	m_pResource->AddAnimationFrame("EditButtonClick",
+		Vector2(400.f, 0.f), Vector2(600.f, 100.f));*/
+}
+
+void CSceneStart::LoadTexture()
+{
+	// Background
+	m_pResource->LoadTexture("Background", TEXT("Background.bmp"));
+
+	// Logo
+	m_pResource->LoadTexture("Logo", TEXT("logo/logo_%d.bmp"), 3);
+
+	// StartButton
+	m_pResource->LoadTexture("StartButtonNormal", TEXT("MenuButton/StartButton_0.bmp"));
+	m_pResource->SetColorKey("StartButtonNormal", 255, 0, 255);
+
+	m_pResource->LoadTexture("StartButtonMouseOn", TEXT("MenuButton/StartButton_1.bmp"));
+	m_pResource->SetColorKey("StartButtonMouseOn", 255, 0, 255);
+
+	// EditButton
+	m_pResource->LoadTexture("EditButtonNormal", TEXT("MenuButton/EditButton_0.bmp"));
+	m_pResource->SetColorKey("EditButtonNormal", 255, 0, 255);
+
+	m_pResource->LoadTexture("EditButtonMouseOn", TEXT("MenuButton/EditButton_1.bmp"));
+	m_pResource->SetColorKey("EditButtonMouseOn", 255, 0, 255);
+
+	// ExitButton
+	m_pResource->LoadTexture("ExitButtonNormal", TEXT("MenuButton/ExitButton_0.bmp"));
+	m_pResource->SetColorKey("ExitButtonNormal", 255, 0, 255);
+
+	m_pResource->LoadTexture("ExitButtonMouseOn", TEXT("MenuButton/ExitButton_1.bmp"));
+	m_pResource->SetColorKey("ExitButtonMouseOn", 255, 0, 255);
+
+	/*m_pResource->LoadTexture("StartButton", TEXT("StartButton.bmp"));
+	m_pResource->LoadTexture("EditButton", TEXT("EditButton.bmp"));*/
+}
+
+void CSceneStart::StartClick(float fTime)
+{
+	//MessageBox(0, TEXT("Path"), TEXT("Path"), MB_OK);
+	GET_SINGLE(CSceneManager)->CreateNextScene<CSceneMain>();
+}
+
+void CSceneStart::Edit(float fTime)
+{
+	GET_SINGLE(CSceneManager)->CreateNextScene<CSceneEdit>();
+}
+
+void CSceneStart::Exit(float fTime)
+{
+	GET_SINGLE(CGameManager)->Exit();
+}

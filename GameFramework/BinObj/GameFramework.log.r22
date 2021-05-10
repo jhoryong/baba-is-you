@@ -1,0 +1,31 @@
+﻿  Animation.cpp
+  Collider.cpp
+  ColliderRect.cpp
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Collider\ColliderRect.cpp(72,30): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Collider\ColliderRect.cpp(73,29): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Collider\ColliderRect.cpp(74,31): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Collider\ColliderRect.cpp(75,32): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Collision.cpp
+  Input.cpp
+  Bullet.cpp
+  Character.cpp
+  Monster.cpp
+  Mouse.cpp
+  Obj.cpp
+  Player.cpp
+  Camera.cpp
+  CollisionSection.cpp
+  CollisionSectionManager.cpp
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Scene\CollisionSectionManager.cpp(61,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Scene\CollisionSectionManager.cpp(62,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Scene\CollisionSectionManager.cpp(64,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\Lecture\30th\API\GameFramework\GameFramework\Include\Scene\CollisionSectionManager.cpp(65,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Scene.cpp
+  SceneCollision.cpp
+  SceneMain.cpp
+  코드를 생성하고 있습니다.
+  123 of 2927 functions ( 4.2%) were compiled, the rest were copied from previous compilation.
+    58 functions were new in current compilation
+    136 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  GameFramework.vcxproj -> E:\Lecture\30th\API\GameFramework\GameFramework\Include\../Bin/GameFramework.exe

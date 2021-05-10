@@ -1,0 +1,156 @@
+#pragma once
+
+enum class CONNECT_TYPE
+{
+	IS,
+	AND,
+	END
+};
+
+enum class BLOCKOBJ_TYPE
+{
+	CHARACTER,
+	WORD
+};
+
+enum class CHARACTER_TYPE
+{
+	BABA,
+	ROCK,
+	FLAG,
+	WALL,
+	WATER,
+	SELECTOR,
+	GROUNDTILE,
+	GRASS,
+	TPBLOCK,
+	FUNGI,
+	FOLIAGE,
+	TREE,
+	FLOWER,
+	ROCKET,
+	LOCKDOOR,
+	STAR,
+	SKULL,
+	BRICK,
+	LAVA,
+	END
+};
+
+enum class WORD_TYPE
+{
+	NAME,
+	CONNECT,
+	STATE,
+	NUMBER,
+	MAP_PATH,
+	END
+};
+
+enum class NAME_TYPE
+{
+	BABA,
+	ROCK,
+	FLAG,
+	WALL,
+	WATER,
+	SELECTOR,
+	GROUNDTILE,
+	GRASS,
+	TPBLOCK,
+	FUNGI,
+	FOLIAGE,
+	TREE,
+	FLOWER,
+	ROCKET,
+	LOCKDOOR,
+	STAR,
+	SKULL,
+	BRICK,
+	LAVA,
+	END
+};
+
+enum class STATE_TYPE
+{
+	YOU,
+	WIN,
+	STOP,
+	PUSH, // WORD 는 PUSH 로 고정된다.
+	SINK,
+	DEFEAT,
+	HOT,
+	MELT,
+	END
+};
+
+
+enum class ANIM_TYPE
+{
+	ATLAS,
+	FRAME
+};
+
+enum class ANIM_OPTION
+{
+	LOOP,
+	ONCE_RETURN,
+	ONCE_DESTROY,
+	ONCE_PAUSE,
+	TIME_RETURN,
+	TIME_DESTROY
+};
+
+enum class ANIM_PLAY_TYPE
+{
+	NORMAL,
+	REVERSE
+};
+
+enum MOVE_DIR
+{
+	MD_LEFT = -1,
+	MD_NONE,
+	MD_RIGHT
+};
+
+enum class COLLIDER_TYPE
+{
+	RECT,
+	SPHERE2D
+};
+
+
+enum class COLLISION_STATE
+{
+	BEGIN,
+	OVERLAP,
+	END,
+	MAX
+};
+
+enum class BUTTON_STATE
+{
+	NORMAL,
+	MOUSEON,
+	CLICK,
+	END
+};
+
+enum TEXT_MODE
+{
+	TM_UI,
+	TM_WORLD
+};
+
+enum class TILE_TYPE
+{
+	NORMAL,
+	NOMOVE
+};
+
+enum BRUSH_TYPE
+{
+	BT_TILETYPE,
+	BT_TILETEXTURE
+};

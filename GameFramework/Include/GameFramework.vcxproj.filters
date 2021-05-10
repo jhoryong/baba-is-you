@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="01. GameManager">
+      <UniqueIdentifier>{a771de76-2af2-4fd8-b7ef-09e32b706c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameManager\01. Timer">
+      <UniqueIdentifier>{c97ed817-edf3-4c47-aca0-9f648de47046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameManager\02. Input">
+      <UniqueIdentifier>{b2d4040e-1165-4a44-b09d-99ecd4fb5e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene">
+      <UniqueIdentifier>{93d82d6d-8ac5-44a0-9508-27e4d1cd337f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameManager\03. Ref">
+      <UniqueIdentifier>{f343f0ec-9aaa-45e9-86ff-4837e6dcd564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object">
+      <UniqueIdentifier>{afafd045-9382-408d-a25f-dc2a1e2013c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameManager\04. Path">
+      <UniqueIdentifier>{73eb4dc0-296b-43af-9dca-5103583ebdbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Resource">
+      <UniqueIdentifier>{ccc33adb-cb91-4eeb-950f-699425356309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Resource\01. Texture">
+      <UniqueIdentifier>{65aa5e0a-06d7-4fec-96d7-f4f34cf59ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Animation">
+      <UniqueIdentifier>{64e51fcb-1041-40be-8e7f-437a5da853e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Resource\02. AnimationSequence">
+      <UniqueIdentifier>{3ad2ceb5-fe0b-45bf-abde-737d153d4ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\01. SceneResource">
+      <UniqueIdentifier>{e2455cd3-4b28-4fa4-b348-f9f40fdbd200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\02. Camera">
+      <UniqueIdentifier>{16f9c909-4cf0-4b6f-b696-cec5a2b8ae1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\03. Collision">
+      <UniqueIdentifier>{7423418e-01e7-4582-8347-9531fd2b92ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06. Collider">
+      <UniqueIdentifier>{873a2e44-f971-4ff3-b6de-0870137a5114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. GameManager\05. Font">
+      <UniqueIdentifier>{289bce53-1442-4477-a63f-2fc272818d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. TileMap">
+      <UniqueIdentifier>{38cab295-065c-4ea5-a311-58c28d6108da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Resource\03. Sound">
+      <UniqueIdentifier>{f0b15571-860f-4258-857c-9210e6e81d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj">
+      <UniqueIdentifier>{236a9de0-acb3-4b0e-b7b8-d4ae1eae8368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word">
+      <UniqueIdentifier>{0bf4316e-79f1-43fb-83c8-d6def1a97ed3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name">
+      <UniqueIdentifier>{f47dd6aa-5ebd-4fb5-bf53-0ea773a5bdb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\02. Connect">
+      <UniqueIdentifier>{938bcc6e-1fd5-400f-be9c-dea8ceb68aaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State">
+      <UniqueIdentifier>{9b9bc986-09c1-430c-b16e-456fa0952e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character">
+      <UniqueIdentifier>{a29d0761-9432-4889-87f3-692ad429cc9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\01. Baba">
+      <UniqueIdentifier>{62b4186e-5d30-4e20-b20e-a5f88d57aea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\02. Mouse">
+      <UniqueIdentifier>{aff2920a-0369-4404-912b-61c8a9f3471f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\03. Effect">
+      <UniqueIdentifier>{66eb106a-2a41-4aac-ac7e-ab0f1d6b55af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\04. UI">
+      <UniqueIdentifier>{81818156-85b7-4a55-82a9-6ad3e68f89fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\05. Map">
+      <UniqueIdentifier>{3e421f0b-0278-447a-a4d6-6c387e92b66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\02. Rock">
+      <UniqueIdentifier>{5fbbe333-93e2-4e2a-89e2-b456d1290240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\03. Flag">
+      <UniqueIdentifier>{6f6f402f-97af-4188-a939-bfe5c4fd0410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\04. Wall">
+      <UniqueIdentifier>{5944ba14-fcb6-4cee-b68c-150ad12d0782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\01. Baba">
+      <UniqueIdentifier>{f9351f40-0bb3-4eee-87db-230d6637b1ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\02. Connect\01. Is">
+      <UniqueIdentifier>{b0ae78c6-333d-4a01-b3c3-f058c2a020a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\01. You">
+      <UniqueIdentifier>{4923c5f2-00b9-4524-b23e-2112457eab71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\02. Flag">
+      <UniqueIdentifier>{f3c643c3-9169-46f0-92c7-bcc68bc77d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\03. Wall">
+      <UniqueIdentifier>{3fb1c7a6-39c1-4e60-8f65-b69c867f0c80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\04. Rock">
+      <UniqueIdentifier>{366d4e4a-9591-4487-bbd0-6c848cd567a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\02. Win">
+      <UniqueIdentifier>{dfd064b7-6f47-4f08-a0ed-e1b9d9cea3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\03. Stop">
+      <UniqueIdentifier>{fbd927c2-8496-4081-9bd3-f73d2af97c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\04. Push">
+      <UniqueIdentifier>{c4c6f3ad-967d-4a89-bf92-2b397bd57c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\06. StageObj">
+      <UniqueIdentifier>{444304e1-c20d-4a71-a2e7-7ef46f9a30a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\08. BackgroundObj">
+      <UniqueIdentifier>{d7cf73d4-97cd-4c04-aa56-a368ad1afd27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\05. Selector">
+      <UniqueIdentifier>{6b7f1d7d-ef9d-462d-9d8b-98c879992191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\04. Number">
+      <UniqueIdentifier>{6aa7eb5c-1c2a-4a5e-b521-b49bb3631c64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\05. MapPath">
+      <UniqueIdentifier>{8d273093-85bc-45f6-ac45-f6ece84abeba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\07. GroundTile">
+      <UniqueIdentifier>{87bc389a-4bf0-4622-a240-6e5818fb94ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\08. Grass">
+      <UniqueIdentifier>{df2a965b-7fdb-4948-82b1-eb1144382586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\06. TPBlock">
+      <UniqueIdentifier>{6d3c2af8-3863-4f70-8699-71f35db8bc18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\09. Fungi">
+      <UniqueIdentifier>{a7651b0d-6e2a-4c94-9e0e-f6123bd2c7da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\10. Foliage">
+      <UniqueIdentifier>{cfa39fd3-8e49-48e4-bab3-0f49a978007f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\11. Tree">
+      <UniqueIdentifier>{20c2966a-1327-43ca-9eb8-5c8ba419297b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\12. Flower">
+      <UniqueIdentifier>{09486f88-eab6-4725-8fd0-6bea881afdd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\13. Rocket">
+      <UniqueIdentifier>{adb24910-e0e2-4aab-8331-014d8f966ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\14. LockDoor">
+      <UniqueIdentifier>{0de73829-2e78-4bb2-a2e1-dc6569f0f3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\15. Star">
+      <UniqueIdentifier>{4891bbab-c920-48ae-bd63-4ca66c60c4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\16. Water">
+      <UniqueIdentifier>{66eda8a3-d34d-4185-9637-ad935d168abe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes">
+      <UniqueIdentifier>{912c9bde-7f51-479c-995f-0c839bfe7786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\01. Start">
+      <UniqueIdentifier>{8430d093-d98d-4b22-92f6-baef5c1042d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\02. MainMap">
+      <UniqueIdentifier>{cc0950e5-3f6e-4a18-9c92-f322ead87007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\04. Edit">
+      <UniqueIdentifier>{954e2958-fae8-4377-86c9-ea4cc7b40b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\05. AnimEdit">
+      <UniqueIdentifier>{34d37634-4419-4544-9acc-07465d8532d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage">
+      <UniqueIdentifier>{203fe72a-7974-404c-ad99-6d99efab3c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage00">
+      <UniqueIdentifier>{4ad5d381-9a5a-4e2a-bdb8-7122c199171f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage01">
+      <UniqueIdentifier>{062cfc0d-c227-431c-a621-c3b85f3ff447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage02">
+      <UniqueIdentifier>{0f9322b4-7c60-4b4a-8424-a8ef0d84f32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\05. Water">
+      <UniqueIdentifier>{9ad2f0f0-9892-4d75-8bb0-63f2c1c7f941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\05. Sink">
+      <UniqueIdentifier>{f2c120ff-8d05-42ee-81a7-56d617a2edaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage03">
+      <UniqueIdentifier>{0c3fa102-6852-4a9a-83d3-3abc563a4f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\17. Skull">
+      <UniqueIdentifier>{cd48bd5a-dad3-4455-a17b-68493771b698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\06. Skull">
+      <UniqueIdentifier>{5cc18567-0b0f-4db0-b8c0-3082e9ff7028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\06. Defeat">
+      <UniqueIdentifier>{81df04c1-a88b-40c5-a62c-80ed3598adf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage04">
+      <UniqueIdentifier>{5ff7e966-b3da-45d9-81da-50874dd8ac69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage07">
+      <UniqueIdentifier>{ed5ebf0a-6feb-4eec-9551-cb66f9954faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\07. Grass">
+      <UniqueIdentifier>{dd89b5ab-2a84-48a3-8d8d-f28b5f6834bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\18. Brick">
+      <UniqueIdentifier>{3356f097-9f21-4024-bbbf-ad5c4148fe69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\Stage06">
+      <UniqueIdentifier>{9562ed4d-82e7-4517-a431-28f25eca075e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\01. Character\19. Lava">
+      <UniqueIdentifier>{aa27e34b-0efa-43d1-ae07-33000dda4775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\01. Name\08. Lava">
+      <UniqueIdentifier>{7b825d49-8478-4776-ba9e-0efabf1dc30d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\07. Hot">
+      <UniqueIdentifier>{2f23d0c9-a581-4b61-8cc3-20c14af4b238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Object\01. BlockObj\02. Word\03. State\08. Melt">
+      <UniqueIdentifier>{d8636ea5-aa04-4228-a8ca-415a515a4dc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Scene\04. Scenes\03. Stage\stage05">
+      <UniqueIdentifier>{76e44bff-cf23-4608-a345-bfe8e1ac6951}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>01. GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>01. GameManager\01. Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>01. GameManager\02. Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>02. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>02. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Ref.cpp">
+      <Filter>01. GameManager\03. Ref</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Obj.cpp">
+      <Filter>03. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Character.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>01. GameManager\04. Path</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceManager.cpp">
+      <Filter>04. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture.cpp">
+      <Filter>04. Resource\01. Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>05. Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\AnimationSequence.cpp">
+      <Filter>04. Resource\02. AnimationSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\AnimationNotify.cpp">
+      <Filter>04. Resource\02. AnimationSequence</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Mouse.cpp">
+      <Filter>03. Object\02. Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneResource.cpp">
+      <Filter>02. Scene\01. SceneResource</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Camera.cpp">
+      <Filter>02. Scene\02. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CollisionSection.cpp">
+      <Filter>02. Scene\03. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CollisionSectionManager.cpp">
+      <Filter>02. Scene\03. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneCollision.cpp">
+      <Filter>02. Scene\03. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\Collider.cpp">
+      <Filter>06. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\ColliderRect.cpp">
+      <Filter>06. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\Collision.cpp">
+      <Filter>06. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Effect.cpp">
+      <Filter>03. Object\03. Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\UI.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\UIButton.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider\ColliderSphere.cpp">
+      <Filter>06. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\UIBar.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\UIImage.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FontManager.cpp">
+      <Filter>01. GameManager\05. Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Text.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MapObj.cpp">
+      <Filter>03. Object\05. Map</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap\TileMap.cpp">
+      <Filter>07. TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap\Tile.cpp">
+      <Filter>07. TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Sound.cpp">
+      <Filter>04. Resource\03. Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\UIBackground.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Word.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Name.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Connect.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\02. Connect</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\State.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Baba.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\01. Baba</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BlockObj.cpp">
+      <Filter>03. Object\01. BlockObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Rock.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\02. Rock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Flag.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\03. Flag</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Wall.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\04. Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BabaName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\01. Baba</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Is.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\02. Connect\01. Is</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\You.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\01. You</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\FlagName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\02. Flag</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WallName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\03. Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\RockName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\04. Rock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Win.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\02. Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Stop.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\03. Stop</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Push.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\04. Push</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStart.cpp">
+      <Filter>02. Scene\04. Scenes\01. Start</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneEdit.cpp">
+      <Filter>02. Scene\04. Scenes\04. Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneMainMap.cpp">
+      <Filter>02. Scene\04. Scenes\02. MainMap</Filter>
+    </ClCompile>
+    <ClCompile Include="MapToolDlg.cpp">
+      <Filter>02. Scene\04. Scenes\04. Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneAnimEdit.cpp">
+      <Filter>02. Scene\04. Scenes\05. AnimEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationToolDlg.cpp">
+      <Filter>02. Scene\04. Scenes\05. AnimEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\StageObj.cpp">
+      <Filter>03. Object\06. StageObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\BackgroundObj.cpp">
+      <Filter>03. Object\08. BackgroundObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Selector.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\05. Selector</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Number.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\04. Number</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\MapPath.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\05. MapPath</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage00.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage00</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GroundTile.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\07. GroundTile</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Grass.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\08. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage01.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage01</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\TPBlock.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\06. TPBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Fungi.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\09. Fungi</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Foliage.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\10. Foliage</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Tree.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\11. Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Flower.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\12. Flower</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Rocket.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\13. Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\LockDoor.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\14. LockDoor</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Star.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\15. Star</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage02.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage02</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Water.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\16. Water</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\WaterName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\05. Water</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Sink.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\05. Sink</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage03.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage03</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Skull.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\17. Skull</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\SkullName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\06. Skull</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Defeat.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\06. Defeat</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage04.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage04</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage07.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage07</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\GrassName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\07. Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Brick.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\18. Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage06.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage06</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Lava.cpp">
+      <Filter>03. Object\01. BlockObj\01. Character\19. Lava</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\LavaName.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\08. Lava</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Hot.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\07. Hot</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Melt.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\08. Melt</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\LavaName2.cpp">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\08. Lava</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneStage05.cpp">
+      <Filter>02. Scene\04. Scenes\03. Stage\stage05</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\UIBaba.cpp">
+      <Filter>03. Object\04. UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>01. GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>01. GameManager\01. Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>01. GameManager\02. Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>02. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>02. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Ref.h">
+      <Filter>01. GameManager\03. Ref</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Obj.h">
+      <Filter>03. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Character.h">
+      <Filter>03. Object\01. BlockObj\01. Character</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>01. GameManager\04. Path</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>04. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture.h">
+      <Filter>04. Resource\01. Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>05. Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\AnimationSequence.h">
+      <Filter>04. Resource\02. AnimationSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\AnimationNotify.h">
+      <Filter>04. Resource\02. AnimationSequence</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Mouse.h">
+      <Filter>03. Object\02. Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneResource.h">
+      <Filter>02. Scene\01. SceneResource</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Camera.h">
+      <Filter>02. Scene\02. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CollisionSection.h">
+      <Filter>02. Scene\03. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CollisionSectionManager.h">
+      <Filter>02. Scene\03. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneCollision.h">
+      <Filter>02. Scene\03. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\Collider.h">
+      <Filter>06. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\ColliderRect.h">
+      <Filter>06. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\Collision.h">
+      <Filter>06. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Effect.h">
+      <Filter>03. Object\03. Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\UI.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\UIButton.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider\ColliderSphere.h">
+      <Filter>06. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\UIBar.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\UIImage.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="FontManager.h">
+      <Filter>01. GameManager\05. Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Text.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MapObj.h">
+      <Filter>03. Object\05. Map</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap\Tile.h">
+      <Filter>07. TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap\TileMap.h">
+      <Filter>07. TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Sound.h">
+      <Filter>04. Resource\03. Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\UIBackground.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Word.h">
+      <Filter>03. Object\01. BlockObj\02. Word</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Name.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Connect.h">
+      <Filter>03. Object\01. BlockObj\02. Word\02. Connect</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\State.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Baba.h">
+      <Filter>03. Object\01. BlockObj\01. Character\01. Baba</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BlockObj.h">
+      <Filter>03. Object\01. BlockObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Rock.h">
+      <Filter>03. Object\01. BlockObj\01. Character\02. Rock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Flag.h">
+      <Filter>03. Object\01. BlockObj\01. Character\03. Flag</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Wall.h">
+      <Filter>03. Object\01. BlockObj\01. Character\04. Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BabaName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\01. Baba</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Is.h">
+      <Filter>03. Object\01. BlockObj\02. Word\02. Connect\01. Is</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\You.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\01. You</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\FlagName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\02. Flag</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WallName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\03. Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\RockName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\04. Rock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Win.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\02. Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Stop.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\03. Stop</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Push.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\04. Push</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStart.h">
+      <Filter>02. Scene\04. Scenes\01. Start</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneEdit.h">
+      <Filter>02. Scene\04. Scenes\04. Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneMainMap.h">
+      <Filter>02. Scene\04. Scenes\02. MainMap</Filter>
+    </ClInclude>
+    <ClInclude Include="MapToolDlg.h">
+      <Filter>02. Scene\04. Scenes\04. Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneAnimEdit.h">
+      <Filter>02. Scene\04. Scenes\05. AnimEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationToolDlg.h">
+      <Filter>02. Scene\04. Scenes\05. AnimEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\StageObj.h">
+      <Filter>03. Object\06. StageObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\BackgroundObj.h">
+      <Filter>03. Object\08. BackgroundObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage.h">
+      <Filter>02. Scene\04. Scenes\03. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Selector.h">
+      <Filter>03. Object\01. BlockObj\01. Character\05. Selector</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Number.h">
+      <Filter>03. Object\01. BlockObj\02. Word\04. Number</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\MapPath.h">
+      <Filter>03. Object\01. BlockObj\02. Word\05. MapPath</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage00.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage00</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GroundTile.h">
+      <Filter>03. Object\01. BlockObj\01. Character\07. GroundTile</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Grass.h">
+      <Filter>03. Object\01. BlockObj\01. Character\08. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage01.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage01</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\TPBlock.h">
+      <Filter>03. Object\01. BlockObj\01. Character\06. TPBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Fungi.h">
+      <Filter>03. Object\01. BlockObj\01. Character\09. Fungi</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Foliage.h">
+      <Filter>03. Object\01. BlockObj\01. Character\10. Foliage</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Tree.h">
+      <Filter>03. Object\01. BlockObj\01. Character\11. Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Flower.h">
+      <Filter>03. Object\01. BlockObj\01. Character\12. Flower</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Rocket.h">
+      <Filter>03. Object\01. BlockObj\01. Character\13. Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\LockDoor.h">
+      <Filter>03. Object\01. BlockObj\01. Character\14. LockDoor</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Star.h">
+      <Filter>03. Object\01. BlockObj\01. Character\15. Star</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage02.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage02</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Water.h">
+      <Filter>03. Object\01. BlockObj\01. Character\16. Water</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\WaterName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\05. Water</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Sink.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\05. Sink</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage03.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage03</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Skull.h">
+      <Filter>03. Object\01. BlockObj\01. Character\17. Skull</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\SkullName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\06. Skull</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Defeat.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\06. Defeat</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage04.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage04</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage07.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage07</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\GrassName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\07. Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Brick.h">
+      <Filter>03. Object\01. BlockObj\01. Character\18. Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage06.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\Stage06</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Lava.h">
+      <Filter>03. Object\01. BlockObj\01. Character\19. Lava</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\LavaName.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\08. Lava</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Hot.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\07. Hot</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Melt.h">
+      <Filter>03. Object\01. BlockObj\02. Word\03. State\08. Melt</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\LavaName2.h">
+      <Filter>03. Object\01. BlockObj\02. Word\01. Name\08. Lava</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneStage05.h">
+      <Filter>02. Scene\04. Scenes\03. Stage\stage05</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\UIBaba.h">
+      <Filter>03. Object\04. UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GameFramework.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

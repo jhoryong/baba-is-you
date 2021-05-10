@@ -1,0 +1,182 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAPTOOL DIALOGEX 0, 0, 276, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Maptool Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Create Tilemap",IDOK,18,137,93,31
+    PUSHBUTTON      "Cancel",IDCANCEL,204,247,63,14
+    LTEXT           "Tile Size X",IDC_STATIC,18,17,44,14,SS_CENTERIMAGE
+    LTEXT           "Tile Size Y",IDC_STATIC,67,17,44,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_TILESIZEX,18,30,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TILESIZEY,67,30,44,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save Tilemap",IDC_BUTTON_SAVE,19,180,93,14
+    PUSHBUTTON      "Load Tilemap",IDC_BUTTON_LOAD,19,195,93,14
+    LISTBOX         IDC_LIST_OBJECT,139,9,128,209,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Tile Count X",IDC_STATIC,18,46,44,14,SS_CENTERIMAGE
+    LTEXT           "Tile Count Y",IDC_STATIC,67,46,44,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_TILECOUNTX,18,60,44,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TILECOUNTY,67,60,44,12,ES_AUTOHSCROLL
+    LTEXT           "Tile Color RGB",IDC_STATIC,18,98,48,8
+    EDITTEXT        IDC_EDIT_R,18,109,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_G,50,109,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_B,82,109,29,14,ES_AUTOHSCROLL
+    CONTROL         "Transparent",IDC_CHECK_TRANSPARENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,81,56,10
+    GROUPBOX        "Tilemap Editor",IDC_TILEMAP_GROUP,6,6,125,212
+    PUSHBUTTON      "Save Stage",IDC_BUTTON_SAVE_STAGE,138,225,63,14
+    PUSHBUTTON      "Load Stage",IDC_BUTTON_LOAD_STAGE,204,225,63,14
+END
+
+IDD_DIALOG_ANIMATIONTOOL DIALOGEX 0, 0, 277, 229
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Animation Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDC_BUTTON_ANIMSAVE,118,208,50,14
+    PUSHBUTTON      "Load",IDC_BUTTON_ANIMLOAD,170,208,50,14
+    COMBOBOX        IDC_COMBO_ANIMATIONIMAGE,7,18,77,53,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add Image",IDC_BUTTON1,88,17,61,14
+    COMBOBOX        IDC_COMBO_ANIMATION_TYPE,7,73,77,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type",IDC_STATIC,7,62,17,8
+    LTEXT           "Option",IDC_STATIC,91,62,22,8
+    COMBOBOX        IDC_COMBO_ANIMATION_OPTION,91,73,77,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Play Type",IDC_STATIC,175,62,32,8
+    COMBOBOX        IDC_COMBO_ANIMATION_PLAY_TYPE,175,73,77,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sequence Name",IDC_STATIC,7,34,54,8
+    EDITTEXT        IDC_SEQUENCE_NAME,7,44,77,14,ES_AUTOHSCROLL
+    LTEXT           "Image Name",IDC_STATIC,7,7,43,8
+    EDITTEXT        IDC_EDIT_FRAME_COUNT,90,103,77,14,ES_AUTOHSCROLL
+    LTEXT           "Frame Count",IDC_STATIC,90,93,43,8
+    LTEXT           "Start X",IDC_STATIC,7,128,24,8
+    EDITTEXT        IDC_EDIT_FRAMESTARTX,7,139,37,14,ES_AUTOHSCROLL
+    LTEXT           "Start Y",IDC_STATIC,48,128,23,8
+    EDITTEXT        IDC_EDIT_FRAMESTARTY,47,139,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create Sequence",IDC_BUTTON_CREATE_SEQUENCE,7,158,77,31
+    LTEXT           "Loop Time",IDC_STATIC,7,92,35,8
+    EDITTEXT        IDC_EDIT_LOOP_TIME,7,103,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR,7,192,77,30
+    PUSHBUTTON      "Cancel",IDCANCEL,222,208,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_MAPTOOL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 275
+        VERTGUIDE, 6
+        BOTTOMMARGIN, 261
+        HORZGUIDE, 9
+    END
+
+    IDD_DIALOG_ANIMATIONTOOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        VERTGUIDE, 84
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 222
+        HORZGUIDE, 85
+        HORZGUIDE, 117
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_MAPTOOL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ANIMATIONTOOL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,307 @@
+Rock_0
+4, 0
+Rock_1
+4, 1
+Rock_2
+4, 2
+Rock_3
+4, 3
+Rock_4
+4, 4
+Rock_5
+4, 5
+Rock_6
+0, 6
+Rock_7
+1, 6
+Rock_8
+2, 6
+Rock_9
+3, 6
+Rock_10
+4, 6
+Wall_0
+6, 4
+Wall_1
+6, 5
+Wall_2
+6, 6
+Wall_3
+6, 7
+Wall_4
+6, 8
+Wall_5
+7, 8
+Wall_6
+8, 8
+Wall_7
+9, 8
+Wall_8
+10, 8
+Wall_9
+7, 4
+Wall_10
+8, 4
+Wall_11
+9, 4
+Wall_12
+10, 4
+Wall_13
+10, 5
+Wall_14
+10, 7
+Wall_15
+10, 1
+Wall_16
+10, 2
+Wall_17
+10, 3
+Wall_18
+11, 1
+Wall_20
+13, 1
+Wall_21
+14, 1
+Wall_22
+15, 1
+Wall_23
+16, 1
+Wall_24
+17, 1
+Wall_25
+18, 1
+Wall_26
+19, 1
+Wall_27
+19, 2
+Wall_28
+19, 3
+Wall_29
+19, 4
+Wall_30
+19, 5
+Wall_31
+15, 2
+Wall_32
+15, 4
+Wall_33
+15, 5
+Wall_34
+15, 6
+Wall_35
+16, 5
+Wall_36
+17, 5
+Wall_37
+18, 5
+Wall_38
+13, 6
+Wall_39
+14, 6
+Wall_40
+10, 9
+Wall_41
+10, 10
+Wall_42
+10, 11
+Wall_43
+11, 11
+Wall_44
+12, 11
+Wall_45
+13, 11
+Wall_46
+15, 8
+Wall_47
+15, 9
+Wall_48
+15, 10
+Wall_49
+15, 11
+Wall_50
+14, 11
+Grass_0
+5, 0
+Grass_1
+6, 0
+Grass_2
+7, 0
+Grass_3
+8, 0
+Grass_4
+9, 0
+Grass_5
+6, 1
+Grass_6
+7, 1
+Grass_7
+21, 0
+Grass_8
+22, 0
+Grass_9
+23, 0
+Grass_10
+22, 1
+Grass_11
+23, 1
+Grass_12
+23, 2
+Grass_13
+19, 13
+Grass_14
+20, 13
+Grass_15
+21, 13
+Grass_16
+22, 13
+Grass_17
+23, 13
+Grass_18
+21, 12
+Grass_19
+22, 12
+Grass_20
+2, 9
+Grass_21
+2, 10
+Grass_22
+1, 10
+Grass_23
+3, 11
+Grass_24
+3, 10
+Grass_25
+2, 11
+GroundTile_0
+16, 2
+GroundTile_1
+16, 3
+GroundTile_2
+16, 4
+GroundTile_3
+17, 4
+GroundTile_4
+18, 4
+GroundTile_5
+18, 3
+GroundTile_6
+18, 2
+GroundTile_7
+17, 2
+Brick_0
+8, 3
+Brick_1
+9, 3
+Brick_2
+9, 2
+Brick_3
+16, 6
+Brick_4
+17, 6
+Brick_5
+16, 8
+Brick_6
+17, 8
+Brick_7
+16, 9
+GroundTile_8
+7, 5
+GroundTile_9
+8, 5
+GroundTile_10
+9, 5
+GroundTile_11
+9, 6
+GroundTile_12
+9, 7
+GroundTile_13
+8, 7
+GroundTile_14
+7, 7
+GroundTile_15
+7, 6
+Flower_4
+8, 1
+Flower_5
+22, 5
+Flower_6
+21, 9
+Flower_7
+19, 10
+Flower_8
+17, 12
+Flower_9
+3, 7
+Skull_0
+12, 0
+Skull_1
+12, 1
+Skull_2
+12, 2
+Skull_3
+12, 3
+Skull_4
+12, 4
+Skull_5
+12, 5
+Skull_6
+12, 6
+Skull_7
+12, 7
+Skull_8
+13, 7
+Skull_9
+14, 7
+Skull_10
+15, 7
+Skull_11
+16, 7
+Skull_12
+17, 7
+Skull_13
+18, 7
+Skull_14
+19, 7
+Skull_15
+20, 7
+Skull_16
+21, 7
+Skull_17
+22, 7
+Skull_18
+23, 7
+Flag_0
+17, 3
+Baba_0
+8, 6
+RockName_0
+0, 0
+Is_0
+1, 0
+Is_1
+1, 2
+Is_2
+1, 4
+Stop_0
+2, 0
+Defeat_0
+2, 2
+Win_0
+2, 4
+SkullName_0
+0, 2
+FlagName_0
+0, 4
+BabaName_0
+8, 10
+Is_3
+8, 11
+You_0
+8, 12
+WallName_0
+12, 9
+Is_4
+13, 9
+Stop_1
+14, 9
+END

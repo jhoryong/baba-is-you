@@ -1,0 +1,185 @@
+Baba_
+14, 13
+Flag_
+11, 8
+Wall_
+9, 2
+Wall_
+10, 2
+Wall_
+11, 2
+Wall_
+12, 2
+Wall_
+13, 2
+Wall_
+14, 2
+Wall_
+15, 2
+Wall_
+16, 2
+Wall_
+16, 3
+Wall_
+16, 4
+Wall_
+16, 5
+Wall_
+16, 6
+Wall_
+16, 7
+Wall_
+16, 8
+Wall_
+16, 9
+Wall_
+16, 10
+Wall_
+16, 11
+Wall_
+16, 12
+Wall_
+16, 13
+Wall_
+16, 14
+Wall_
+16, 15
+Wall_
+16, 16
+Wall_
+16, 16
+Wall_
+16, 16
+Wall_
+15, 16
+Wall_
+14, 16
+Wall_
+13, 16
+Wall_
+12, 16
+Wall_
+11, 16
+Wall_
+10, 16
+Wall_
+9, 16
+Wall_
+9, 15
+Wall_
+9, 14
+Wall_
+9, 13
+Wall_
+9, 12
+Wall_
+9, 11
+Wall_
+9, 10
+Wall_
+10, 10
+Wall_
+11, 10
+Wall_
+12, 10
+Wall_
+13, 10
+Wall_
+14, 10
+Wall_
+15, 10
+Wall_
+8, 10
+Wall_
+7, 10
+Wall_
+6, 10
+Wall_
+5, 10
+Wall_
+5, 9
+Wall_
+5, 8
+Wall_
+5, 7
+Wall_
+5, 6
+Wall_
+6, 6
+Wall_
+7, 6
+Wall_
+8, 6
+Wall_
+9, 6
+Wall_
+9, 5
+Wall_
+9, 4
+Wall_
+9, 3
+Grass_
+7, 1
+Grass_
+22, 2
+Grass_
+17, 3
+Grass_
+18, 4
+Grass_
+20, 7
+Grass_
+1, 8
+Grass_
+2, 9
+Grass_
+21, 12
+Grass_
+21, 13
+Grass_
+20, 13
+Grass_
+2, 15
+Grass_
+19, 16
+GroundTile_
+6, 7
+GroundTile_
+7, 7
+GroundTile_
+8, 7
+GroundTile_
+9, 7
+GroundTile_
+6, 8
+GroundTile_
+8, 8
+GroundTile_
+9, 8
+GroundTile_
+6, 9
+GroundTile_
+7, 9
+GroundTile_
+8, 9
+GroundTile_
+9, 9
+BabaName_
+6, 12
+Is_
+6, 13
+You_
+6, 14
+WallName_
+11, 12
+Is_
+11, 13
+Stop_
+11, 14
+FlagName_
+7, 8
+Is_
+11, 4
+Win_
+14, 6
+END
