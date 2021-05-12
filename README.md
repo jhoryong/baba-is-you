@@ -3,4 +3,4 @@
 
 Microsoft Visual Studio IDE 를 사용하였습니다.
 
-유튜브 [소개 영상](https://youtu.be/oWTdScm_5bA) 입니다.
+[프로젝트 소개 및 설명 영상](https://youtu.be/oWTdScm_5bA) 입니다.
