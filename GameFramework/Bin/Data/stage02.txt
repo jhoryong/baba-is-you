@@ -1,0 +1,185 @@
+Flag_0
+10, 2
+Flag_1
+11, 2
+Flag_2
+12, 2
+Flag_3
+13, 2
+Flag_4
+14, 2
+Flag_5
+17, 2
+Flag_6
+16, 2
+Flag_7
+15, 2
+Flag_8
+17, 15
+Flag_9
+17, 14
+Flag_10
+17, 13
+Flag_11
+17, 12
+Flag_12
+17, 11
+Flag_13
+17, 10
+Flag_14
+17, 9
+Flag_15
+17, 8
+Flag_16
+17, 7
+Flag_17
+17, 6
+Flag_18
+17, 5
+Flag_19
+17, 4
+Flag_20
+17, 3
+Flag_22
+14, 15
+Flag_23
+15, 15
+Flag_24
+16, 15
+Flag_25
+14, 16
+Flag_26
+13, 16
+Flag_27
+12, 16
+Flag_28
+11, 16
+Flag_29
+10, 16
+Flag_30
+10, 15
+Flag_31
+10, 14
+Flag_32
+10, 13
+Flag_33
+10, 12
+Flag_34
+10, 11
+Flag_35
+10, 10
+Flag_36
+11, 10
+Flag_37
+12, 10
+Flag_38
+13, 10
+Flag_39
+14, 10
+Flag_40
+15, 10
+Flag_41
+16, 10
+Flag_42
+9, 10
+Flag_43
+8, 10
+Flag_44
+7, 10
+Flag_45
+6, 10
+Flag_47
+6, 6
+Flag_48
+6, 7
+Flag_49
+6, 8
+Flag_50
+6, 9
+Flag_51
+7, 6
+Flag_52
+8, 6
+Flag_53
+9, 6
+Flag_54
+10, 6
+Flag_55
+10, 5
+Flag_56
+10, 4
+Flag_57
+10, 3
+Grass_0
+7, 7
+Grass_1
+7, 8
+Grass_2
+7, 9
+Grass_3
+8, 7
+Grass_4
+9, 7
+Grass_5
+10, 7
+Grass_6
+10, 8
+Grass_7
+10, 9
+Grass_8
+9, 9
+Grass_9
+8, 9
+Grass_10
+9, 8
+Wall_0
+15, 13
+GroundTile_0
+18, 3
+GroundTile_1
+19, 4
+GroundTile_2
+22, 2
+GroundTile_3
+21, 9
+GroundTile_4
+18, 16
+GroundTile_5
+18, 15
+GroundTile_6
+19, 14
+GroundTile_7
+5, 16
+GroundTile_8
+4, 14
+GroundTile_9
+1, 9
+GroundTile_10
+2, 8
+GroundTile_11
+5, 4
+GroundTile_12
+5, 3
+GroundTile_13
+2, 2
+GroundTile_14
+8, 1
+BabaName_0
+8, 8
+Is_0
+12, 4
+Win_0
+15, 6
+WallName_0
+7, 12
+FlagName_0
+12, 12
+Is_1
+7, 13
+Is_2
+12, 13
+You_0
+7, 14
+Stop_0
+12, 14
+END

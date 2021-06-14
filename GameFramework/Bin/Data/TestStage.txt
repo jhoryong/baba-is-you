@@ -1,0 +1,47 @@
+Rock_1
+14, 9
+Flag_8
+15, 9
+Wall_0
+11, 7
+Wall_1
+12, 7
+Wall_2
+13, 7
+Wall_3
+14, 7
+Wall_4
+15, 7
+Wall_5
+16, 7
+Wall_6
+16, 8
+Wall_7
+16, 9
+Wall_8
+16, 10
+Wall_9
+15, 10
+Wall_10
+14, 10
+Wall_11
+13, 10
+Wall_12
+12, 10
+Wall_13
+11, 10
+Wall_14
+11, 9
+Wall_15
+12, 9
+Wall_16
+12, 8
+Baba_1
+13, 9
+BabaName_0
+13, 8
+Is_0
+14, 8
+You_0
+15, 8
+END

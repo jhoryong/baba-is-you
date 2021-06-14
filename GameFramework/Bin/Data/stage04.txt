@@ -1,0 +1,135 @@
+Skull_19
+15, 11
+Skull_20
+16, 11
+Skull_21
+17, 11
+Skull_22
+18, 11
+Skull_23
+19, 11
+Skull_24
+20, 11
+Skull_25
+21, 11
+Skull_34
+15, 3
+Skull_35
+16, 3
+Skull_36
+17, 3
+Skull_37
+18, 3
+Skull_38
+19, 3
+Skull_41
+20, 3
+Skull_43
+21, 3
+Skull_44
+21, 4
+Skull_45
+21, 5
+Skull_46
+21, 6
+Skull_47
+21, 7
+Skull_48
+21, 8
+Skull_49
+21, 9
+Skull_50
+21, 10
+Flag_0
+18, 9
+Skull_51
+3, 13
+Skull_52
+3, 12
+Skull_53
+3, 11
+Skull_54
+3, 10
+Skull_55
+3, 9
+Skull_56
+4, 9
+Skull_57
+5, 9
+Skull_58
+5, 8
+Skull_59
+5, 7
+Skull_60
+7, 7
+Skull_61
+7, 8
+Skull_62
+7, 9
+Skull_63
+8, 9
+Skull_64
+9, 9
+Skull_65
+9, 10
+Skull_66
+9, 11
+Skull_67
+9, 12
+Skull_68
+9, 13
+Rock_3
+6, 8
+Rock_4
+6, 9
+Rock_5
+6, 10
+Skull_69
+13, 11
+Skull_70
+13, 10
+Skull_71
+13, 9
+Skull_72
+13, 8
+Skull_73
+13, 7
+Skull_74
+13, 6
+Skull_75
+13, 5
+Skull_76
+13, 4
+Skull_77
+13, 3
+Skull_78
+14, 3
+Skull_79
+14, 11
+Baba_0
+6, 12
+FlagName_0
+0, 0
+Is_0
+1, 0
+Is_1
+1, 1
+Win_0
+2, 0
+BabaName_0
+0, 1
+You_0
+2, 1
+RockName_0
+2, 5
+Is_2
+3, 5
+Push_0
+4, 5
+SkullName_1
+15, 5
+Is_4
+15, 6
+Defeat_1
+15, 7
+END
