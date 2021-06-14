@@ -1,2 +1,0 @@
-resolution 854, 480
-background color: 21, 24, 31
